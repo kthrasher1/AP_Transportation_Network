@@ -1,0 +1,6 @@
+fileName=C:\AP\Navigation.cpp
+isCpp=
+compilerOpts=-I"C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\runtime\include" /Zi /W3 /O2 /EHsc /MD /fp:precise /Gd /GS /sdl /Oi /Gm- /Gy /D_MBCS /Zc:wchar_t /Zc:forScope /Zc:inline /WX- /nologo /FC /diagnostics:classic -DPARASOFT_CPPTEST -I.
+compilerId=vc_14_1-64
+workingDir=C:\AP\
+advancedOptionsHash=0

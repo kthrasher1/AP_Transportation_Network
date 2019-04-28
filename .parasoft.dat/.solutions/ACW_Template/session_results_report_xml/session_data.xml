@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><ResultsSession>
+   <SessionData configName="Example Configuration" enabledAnalysis="Static" enabledHandlers="com.parasoft.xtest.checkers.api.standards.factory;com.parasoft.xtest.checkers.api.scope.factory;com.parasoft.xtest.checkers.api.metrics.factory" hasViols="true" header="??:ACW_Template:?? ??true??false??" runId="" startTime="1556286533054" tool="c++test">
+      <Authors>
+         <Author id="dev1" name="556618"/>
+      </Authors>
+      <Selection>
+         <Res id="ACW_Template/ACW_Template"/>
+      </Selection>
+      <XmlDataFiles file0="G:\AP\.parasoft.dat\.solutions\ACW_Template\session_results_report_xml\cs_violations.xml"/>
+   </SessionData>
+   <Locations>
+      <Loc fsPath="G:\AP\Main.cpp" loc="ACW_Template/ACW_Template/Main.cpp" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+      <Loc fsPath="G:\AP\Navigation.cpp" loc="ACW_Template/ACW_Template/Navigation.cpp" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+   </Locations>
+   <CodingStandards>
+      <HistoryData authTsks="2" authors="556618" cvdLn="771" startTime="1556286533054" totLn="771" totTsks="2"/>
+      <TestedFilesDetails>
+         <Total name="Suppressed / Total" supp="0" total="2">
+            <Project name="ACW_Template" supp="0" total="2">
+               <Res name="ACW_Wrapper.h" supp="0" total="0"/>
+               <Res name="Arc.cpp" supp="0" total="0"/>
+               <Res name="Node.h" supp="0" total="0"/>
+               <Res name="Navigation.h" supp="0" total="0"/>
+               <Res loc="ACW_Template/ACW_Template/Main.cpp" locType="sr" name="Main.cpp" supp="0" total="1"/>
+               <Res name="Node.cpp" supp="0" total="0"/>
+               <Res name="Arc.h" supp="0" total="0"/>
+               <Res loc="ACW_Template/ACW_Template/Navigation.cpp" locType="sr" name="Navigation.cpp" supp="0" total="1"/>
+            </Project>
+         </Total>
+      </TestedFilesDetails>
+   </CodingStandards>
+   <MetricsNormal/>
+   <MetricsDetailed/>
+</ResultsSession>

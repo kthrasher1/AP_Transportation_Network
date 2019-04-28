@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mergePnt id="csViolations">
+  <StdViols>
+    <StdViol sev="3" ln="46" cat="MISRA2004" hash="-1225256106" urgent="true" tool="c++test" locType="sr" msg="Function 'main' should have return at the end of each execution path" lang="cpp" rule="MISRA2004-16_8" config="2" auth="556618" locStartln="46" locStartPos="4" locEndLn="46" locEndPos="5" locFile="ACW_Template/ACW_Template/Main.cpp" />
+    <MetViol sev="3" ln="108" cat="METRIC" hash="426073980" urgent="true" tool="c++test" locType="sr" msg="Value 7 is out of acceptable range: 'lower than 7'" lang="cpp" rule="METRIC.NBD" config="2" auth="556618" locStartln="108" locStartPos="0" locEndLn="109" locEndPos="0" locFile="ACW_Template/ACW_Template/Navigation.cpp" />
+  </StdViols>
+</mergePnt>

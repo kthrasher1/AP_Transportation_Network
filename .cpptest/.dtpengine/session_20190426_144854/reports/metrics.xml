@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Metrics writerVersion="0.1.1" hasViols="true" id="1555928169468" lang="en_GB" climode="true" time="2019-04-26T14:49:29+01:00" machine="RB-209A-22" user="556618" toolName="DTP Engine for C/C++" execEnv="win32_x86" toolId="c++test" toolVer="10.4.0" toolDispName="C/C++test" project="" buildId="2019-04-26" prjModule="ACW_Template" tag="Example Configuration">
+  <TestConfig machine="RB-209A-22" pseudoUrl="user://Example Configuration" name="Example Configuration" user="556618" />
+  <Analyzers>
+    <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.code" name="Parasoft C/C++ Code Analyzer" ver="10.4.0" />
+    <Analyzer id="com.parasoft.xtest.cpp.analyzer.desktop.files.in.scope" name="Helper Scope Analyzer for C/C++test Professional" ver="10.4.0" />
+    <Analyzer id="com.parasoft.xtest.dupcode.parser" name="Parasoft Code Duplication Parser" ver="10.4.0.20180702" />
+    <Analyzer id="xtest" name="Scope Analyzer" ver="1" />
+    <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.pattern" name="Parasoft C/C++ Static Analyzer" ver="10.4.0" />
+    <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.flow" name="Parasoft C/C++ Flow Analyzer" ver="10.4.0" />
+    <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.metrics" name="Parasoft C/C++ Metrics Analyzer" ver="10.4.0" />
+    <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.dupcode" name="Parasoft Code Duplication Detector" ver="10.4.0.20180702" />
+    <Analyzer id="com.parasoft.xtest.cpp.analyzer.static.global" name="Parasoft C/C++ Global Static Analyzer" ver="10.4.0" />
+  </Analyzers>
+  <Repositories />
+  <Locations>
+    <Loc locRef="1" totLns="26" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/G:/AP/Arc.cpp" hash="-1861003756" project="ACW_Template" resProjPath="Arc.cpp" projPath="/ACW_Template" />
+    <Loc locRef="2" totLns="45" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/G:/AP/Node.cpp" hash="-726728776" project="ACW_Template" resProjPath="Node.cpp" projPath="/ACW_Template" />
+    <Loc locRef="3" totLns="49" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/G:/AP/Main.cpp" hash="-1225256106" project="ACW_Template" resProjPath="Main.cpp" projPath="/ACW_Template" />
+    <Loc locRef="4" totLns="491" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/G:/AP/Navigation.cpp" hash="426073980" project="ACW_Template" resProjPath="Navigation.cpp" projPath="/ACW_Template" />
+    <Loc locRef="5" totLns="67" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/g:/ap/Navigation.h" hash="-1302675014" project="ACW_Template" resProjPath="Navigation.h" projPath="/ACW_Template" />
+    <Loc locRef="6" totLns="38" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/g:/ap/ACW_Wrapper.h" hash="742920202" project="ACW_Template" resProjPath="ACW_Wrapper.h" projPath="/ACW_Template" />
+    <Loc locRef="7" totLns="25" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/g:/ap/Arc.h" hash="1991036769" project="ACW_Template" resProjPath="Arc.h" projPath="/ACW_Template" />
+    <Loc locRef="8" totLns="30" projId="ACW_Template" auth="556618" uri="file://RB-209A-22/g:/ap/Node.h" hash="1624250163" project="ACW_Template" resProjPath="Node.h" projPath="/ACW_Template" />
+  </Locations>
+<Values>
+  <Metric id="METRIC.NOPLIF" itemId="Navigation.cpp" item="Navigation.cpp" val="491.0" module="ACW_Template" ln="1" locRef="4" />
+  <Metric id="METRIC.NOPLIF" itemId="Main.cpp" item="Main.cpp" val="49.0" module="ACW_Template" ln="1" locRef="3" />
+  <Metric id="METRIC.NOPLIF" itemId="Arc.cpp" item="Arc.cpp" val="26.0" module="ACW_Template" ln="1" locRef="1" />
+  <Metric id="METRIC.NOPLIF" itemId="Navigation.h" item="Navigation.h" val="67.0" module="ACW_Template" ln="1" locRef="5" />
+  <Metric id="METRIC.NOPLIF" itemId="Node.cpp" item="Node.cpp" val="45.0" module="ACW_Template" ln="1" locRef="2" />
+  <Metric id="METRIC.NOPLIF" itemId="ACW_Wrapper.h" item="ACW_Wrapper.h" val="38.0" module="ACW_Template" ln="1" locRef="6" />
+  <Metric id="METRIC.NOPLIF" itemId="Arc.h" item="Arc.h" val="25.0" module="ACW_Template" ln="1" locRef="7" />
+  <Metric id="METRIC.NOPLIF" itemId="Node.h" item="Node.h" val="30.0" module="ACW_Template" ln="1" locRef="8" />
+  <Metric id="METRIC.NOSLIM" itemId="Node.cpp#Node::~Node()" item="Node::~Node()" val="4.0" module="ACW_Template" type="Node" ln="43" locRef="2" />
+  <Metric id="METRIC.NOSLIM" itemId="Arc.cpp#Arc::g_placeA() const" item="Arc::g_placeA() const" val="5.0" module="ACW_Template" type="Arc" ln="9" locRef="1" />
+  <Metric id="METRIC.NOSLIM" itemId="Main.cpp#main" item="main" val="4.0" module="ACW_Template" ln="46" locRef="3" />
+  <Metric id="METRIC.NOSLIM" itemId="Arc.cpp#Arc::g_transportType() const" item="Arc::g_transportType() const" val="5.0" module="ACW_Template" type="Arc" ln="18" locRef="1" />
+  <Metric id="METRIC.NOSLIM" itemId="Node.cpp#Node::g_ref() const" item="Node::g_ref() const" val="5.0" module="ACW_Template" type="Node" ln="17" locRef="2" />
+  <Metric id="METRIC.NOSLIM" itemId="Arc.cpp#Arc::~Arc()" item="Arc::~Arc()" val="4.0" module="ACW_Template" type="Arc" ln="23" locRef="1" />
+  <Metric id="METRIC.NOSLIM" itemId="Node.cpp#Node::g_northings() const" item="Node::g_northings() const" val="5.0" module="ACW_Template" type="Node" ln="29" locRef="2" />
+  <Metric id="METRIC.NOSLIM" itemId="Navigation.cpp#Navigation::BuildNetwork(const std::string&amp;, const std::string&amp;) const" item="Navigation::BuildNetwork(const std::string&amp;, const std::string&amp;) const" val="68.0" module="ACW_Template" type="Navigation" ln="368" locRef="4" />
+  <Metric id="METRIC.NOSLIM" itemId="Navigation.cpp#Navigation::~Navigation()" item="Navigation::~Navigation()" val="4.0" module="ACW_Template" type="Navigation" ln="103" locRef="4" />
+  <Metric id="METRIC.NOSLIM" itemId="Navigation.cpp#Navigation::ProcessCommand(const std::string&amp;)" item="Navigation::ProcessCommand(const std::string&amp;)" val="188.0" module="ACW_Template" type="Navigation" ln="108" locRef="4" />
+  <Metric id="METRIC.NOSLIM" itemId="Navigation.cpp#Navigation::Math(const double &amp;, const double &amp;, const double &amp;, const double &amp;, double &amp;) const" item="Navigation::Math(const double &amp;, const double &amp;, const double &amp;, const double &amp;, double &amp;) const" val="8.0" module="ACW_Template" type="Navigation" ln="482" locRef="4" />
+  <Metric id="METRIC.NOSLIM" itemId="Arc.cpp#Arc::g_placeB() const" item="Arc::g_placeB() const" val="5.0" module="ACW_Template" type="Arc" ln="14" locRef="1" />
+  <Metric id="METRIC.NOSLIM" itemId="Main.cpp#executeACW()" item="executeACW()" val="25.0" module="ACW_Template" ln="15" locRef="3" />
+  <Metric id="METRIC.NOSLIM" itemId="Node.cpp#Node::Node(std::string&amp;, int, double, double, std::vector&lt;Arc *, std::allocator&lt;Arc *>> &amp;)" item="Node::Node(std::string&amp;, int, double, double, std::vector&lt;Arc *, std::allocator&lt;Arc *>> &amp;)" val="4.0" module="ACW_Template" type="Node" ln="7" locRef="2" />
+  <Metric id="METRIC.NOSLIM" itemId="Node.cpp#Node::g_placeName() const" item="Node::g_placeName() const" val="5.0" module="ACW_Template" type="Node" ln="12" locRef="2" />
+  <Metric id="METRIC.NOSLIM" itemId="Navigation.h#Navigation::AllowedTransportFunc(const std::string&amp;) const" item="Navigation::AllowedTransportFunc(const std::string&amp;) const" val="41.0" module="ACW_Template" type="Navigation" ln="22" locRef="5" />
+  <Metric id="METRIC.NOSLIM" itemId="Navigation.cpp#Navigation::Navigation()" item="Navigation::Navigation()" val="4.0" module="ACW_Template" type="Navigation" ln="98" locRef="4" />
+  <Metric id="METRIC.NOSLIM" itemId="Node.cpp#Node::g_NodeArc() const" item="Node::g_NodeArc() const" val="5.0" module="ACW_Template" type="Node" ln="34" locRef="2" />
+  <Metric id="METRIC.NOSLIM" itemId="Node.cpp#Node::g_eastings() const" item="Node::g_eastings() const" val="5.0" module="ACW_Template" type="Node" ln="24" locRef="2" />
+  <Metric id="METRIC.NOSLIM" itemId="Arc.cpp#Arc::Arc(int, int, std::string&amp;)" item="Arc::Arc(int, int, std::string&amp;)" val="4.0" module="ACW_Template" type="Arc" ln="5" locRef="1" />
+  <Metric id="METRIC.CC" itemId="Arc.cpp#Arc::Arc(int, int, std::string&amp;)" item="Arc::Arc(int, int, std::string&amp;)" val="1.0" module="ACW_Template" type="Arc" ln="5" locRef="1" />
+  <Metric id="METRIC.CC" itemId="Arc.cpp#Arc::g_placeA() const" item="Arc::g_placeA() const" val="1.0" module="ACW_Template" type="Arc" ln="9" locRef="1" />
+  <Metric id="METRIC.CC" itemId="Arc.cpp#Arc::g_placeB() const" item="Arc::g_placeB() const" val="1.0" module="ACW_Template" type="Arc" ln="14" locRef="1" />
+  <Metric id="METRIC.CC" itemId="Arc.cpp#Arc::g_transportType() const" item="Arc::g_transportType() const" val="1.0" module="ACW_Template" type="Arc" ln="18" locRef="1" />
+  <Metric id="METRIC.CC" itemId="Arc.cpp#Arc::~Arc()" item="Arc::~Arc()" val="1.0" module="ACW_Template" type="Arc" ln="23" locRef="1" />
+  <Metric id="METRIC.CC" itemId="Node.cpp#Node::Node(std::string&amp;, int, double, double, std::vector&lt;Arc *, std::allocator&lt;Arc *>> &amp;)" item="Node::Node(std::string&amp;, int, double, double, std::vector&lt;Arc *, std::allocator&lt;Arc *>> &amp;)" val="1.0" module="ACW_Template" type="Node" ln="7" locRef="2" />
+  <Metric id="METRIC.CC" itemId="Node.cpp#Node::g_placeName() const" item="Node::g_placeName() const" val="1.0" module="ACW_Template" type="Node" ln="12" locRef="2" />
+  <Metric id="METRIC.CC" itemId="Node.cpp#Node::g_ref() const" item="Node::g_ref() const" val="1.0" module="ACW_Template" type="Node" ln="17" locRef="2" />
+  <Metric id="METRIC.CC" itemId="Node.cpp#Node::g_eastings() const" item="Node::g_eastings() const" val="1.0" module="ACW_Template" type="Node" ln="24" locRef="2" />
+  <Metric id="METRIC.CC" itemId="Node.cpp#Node::g_northings() const" item="Node::g_northings() const" val="1.0" module="ACW_Template" type="Node" ln="29" locRef="2" />
+  <Metric id="METRIC.CC" itemId="Node.cpp#Node::g_NodeArc() const" item="Node::g_NodeArc() const" val="1.0" module="ACW_Template" type="Node" ln="34" locRef="2" />
+  <Metric id="METRIC.CC" itemId="Node.cpp#Node::~Node()" item="Node::~Node()" val="1.0" module="ACW_Template" type="Node" ln="43" locRef="2" />
+  <Metric id="METRIC.CC" itemId="Main.cpp#executeACW()" item="executeACW()" val="4.0" module="ACW_Template" ln="15" locRef="3" />
+  <Metric id="METRIC.CC" itemId="Main.cpp#main" item="main" val="1.0" module="ACW_Template" ln="46" locRef="3" />
+  <Metric id="METRIC.CC" itemId="Navigation.h#Navigation::AllowedTransportFunc(const std::string&amp;) const" item="Navigation::AllowedTransportFunc(const std::string&amp;) const" val="7.0" module="ACW_Template" type="Navigation" ln="22" locRef="5" />
+  <Metric id="METRIC.CC" itemId="Navigation.cpp#Navigation::Navigation()" item="Navigation::Navigation()" val="1.0" module="ACW_Template" type="Navigation" ln="98" locRef="4" />
+  <Metric id="METRIC.CC" itemId="Navigation.cpp#Navigation::~Navigation()" item="Navigation::~Navigation()" val="1.0" module="ACW_Template" type="Navigation" ln="103" locRef="4" />
+  <Metric id="METRIC.CC" itemId="Navigation.cpp#Navigation::ProcessCommand(const std::string&amp;)" item="Navigation::ProcessCommand(const std::string&amp;)" val="23.0" module="ACW_Template" type="Navigation" ln="108" locRef="4" />
+  <Metric id="METRIC.CC" itemId="Navigation.cpp#Navigation::BuildNetwork(const std::string&amp;, const std::string&amp;) const" item="Navigation::BuildNetwork(const std::string&amp;, const std::string&amp;) const" val="6.0" module="ACW_Template" type="Navigation" ln="368" locRef="4" />
+  <Metric id="METRIC.CC" itemId="Navigation.cpp#Navigation::Math(const double &amp;, const double &amp;, const double &amp;, const double &amp;, double &amp;) const" item="Navigation::Math(const double &amp;, const double &amp;, const double &amp;, const double &amp;, double &amp;) const" val="1.0" module="ACW_Template" type="Navigation" ln="482" locRef="4" />
+  <Metric id="METRIC.NBD" itemId="Arc.cpp#Arc::Arc(int, int, std::string&amp;)" item="Arc::Arc(int, int, std::string&amp;)" val="0.0" module="ACW_Template" type="Arc" ln="5" locRef="1" />
+  <Metric id="METRIC.NBD" itemId="Arc.cpp#Arc::g_placeA() const" item="Arc::g_placeA() const" val="0.0" module="ACW_Template" type="Arc" ln="9" locRef="1" />
+  <Metric id="METRIC.NBD" itemId="Arc.cpp#Arc::g_placeB() const" item="Arc::g_placeB() const" val="0.0" module="ACW_Template" type="Arc" ln="14" locRef="1" />
+  <Metric id="METRIC.NBD" itemId="Arc.cpp#Arc::g_transportType() const" item="Arc::g_transportType() const" val="0.0" module="ACW_Template" type="Arc" ln="18" locRef="1" />
+  <Metric id="METRIC.NBD" itemId="Arc.cpp#Arc::~Arc()" item="Arc::~Arc()" val="0.0" module="ACW_Template" type="Arc" ln="23" locRef="1" />
+  <Metric id="METRIC.NBD" itemId="Node.cpp#Node::Node(std::string&amp;, int, double, double, std::vector&lt;Arc *, std::allocator&lt;Arc *>> &amp;)" item="Node::Node(std::string&amp;, int, double, double, std::vector&lt;Arc *, std::allocator&lt;Arc *>> &amp;)" val="0.0" module="ACW_Template" type="Node" ln="7" locRef="2" />
+  <Metric id="METRIC.NBD" itemId="Node.cpp#Node::g_placeName() const" item="Node::g_placeName() const" val="0.0" module="ACW_Template" type="Node" ln="12" locRef="2" />
+  <Metric id="METRIC.NBD" itemId="Node.cpp#Node::g_ref() const" item="Node::g_ref() const" val="0.0" module="ACW_Template" type="Node" ln="17" locRef="2" />
+  <Metric id="METRIC.NBD" itemId="Node.cpp#Node::g_eastings() const" item="Node::g_eastings() const" val="0.0" module="ACW_Template" type="Node" ln="24" locRef="2" />
+  <Metric id="METRIC.NBD" itemId="Node.cpp#Node::g_northings() const" item="Node::g_northings() const" val="0.0" module="ACW_Template" type="Node" ln="29" locRef="2" />
+  <Metric id="METRIC.NBD" itemId="Node.cpp#Node::g_NodeArc() const" item="Node::g_NodeArc() const" val="0.0" module="ACW_Template" type="Node" ln="34" locRef="2" />
+  <Metric id="METRIC.NBD" itemId="Node.cpp#Node::~Node()" item="Node::~Node()" val="0.0" module="ACW_Template" type="Node" ln="43" locRef="2" />
+  <Metric id="METRIC.NBD" itemId="Main.cpp#executeACW()" item="executeACW()" val="2.0" module="ACW_Template" ln="15" locRef="3" />
+  <Metric id="METRIC.NBD" itemId="Main.cpp#main" item="main" val="0.0" module="ACW_Template" ln="46" locRef="3" />
+  <Metric id="METRIC.NBD" itemId="Navigation.h#Navigation::AllowedTransportFunc(const std::string&amp;) const" item="Navigation::AllowedTransportFunc(const std::string&amp;) const" val="1.0" module="ACW_Template" type="Navigation" ln="22" locRef="5" />
+  <Metric id="METRIC.NBD" itemId="Navigation.cpp#Navigation::Navigation()" item="Navigation::Navigation()" val="0.0" module="ACW_Template" type="Navigation" ln="98" locRef="4" />
+  <Metric id="METRIC.NBD" itemId="Navigation.cpp#Navigation::~Navigation()" item="Navigation::~Navigation()" val="0.0" module="ACW_Template" type="Navigation" ln="103" locRef="4" />
+  <Metric id="METRIC.NBD" itemId="Navigation.cpp#Navigation::ProcessCommand(const std::string&amp;)" item="Navigation::ProcessCommand(const std::string&amp;)" val="7.0" module="ACW_Template" type="Navigation" ln="108" locRef="4" />
+  <Metric id="METRIC.NBD" itemId="Navigation.cpp#Navigation::BuildNetwork(const std::string&amp;, const std::string&amp;) const" item="Navigation::BuildNetwork(const std::string&amp;, const std::string&amp;) const" val="4.0" module="ACW_Template" type="Navigation" ln="368" locRef="4" />
+  <Metric id="METRIC.NBD" itemId="Navigation.cpp#Navigation::Math(const double &amp;, const double &amp;, const double &amp;, const double &amp;, double &amp;) const" item="Navigation::Math(const double &amp;, const double &amp;, const double &amp;, const double &amp;, double &amp;) const" val="0.0" module="ACW_Template" type="Navigation" ln="482" locRef="4" />
+</Values></Metrics>

@@ -1,0 +1,280 @@
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-CC
+<b>FUNC=Arc::Arc(int, int, std::string&); CC=1; SCC=1; MCC=1; TEMPLATE_FUNC=
+<l>5
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::Arc(int, int, std::string&); NBD=0; TEMPLATE_FUNC=
+<l>5
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::Arc(int, int, std::string&); PARAMNO=3; DEF=true; DIT=false; START_LINE=5; END_LINE=7; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>5
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-CC
+<b>FUNC=Arc::g_placeA() const; CC=1; SCC=1; MCC=1; TEMPLATE_FUNC=
+<l>9
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::g_placeA() const; NBD=0; TEMPLATE_FUNC=
+<l>9
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::g_placeA() const; PARAMNO=0; DEF=true; DIT=false; START_LINE=9; END_LINE=12; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>9
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-CC
+<b>FUNC=Arc::g_placeB() const; CC=1; SCC=1; MCC=1; TEMPLATE_FUNC=
+<l>14
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::g_placeB() const; NBD=0; TEMPLATE_FUNC=
+<l>14
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::g_placeB() const; PARAMNO=0; DEF=true; DIT=false; START_LINE=14; END_LINE=17; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>14
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-CC
+<b>FUNC=Arc::g_transportType() const; CC=1; SCC=1; MCC=1; TEMPLATE_FUNC=
+<l>18
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::g_transportType() const; NBD=0; TEMPLATE_FUNC=
+<l>18
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::g_transportType() const; PARAMNO=0; DEF=true; DIT=false; START_LINE=18; END_LINE=21; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>18
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-CC
+<b>FUNC=Arc::~Arc(); CC=1; SCC=1; MCC=1; TEMPLATE_FUNC=
+<l>23
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::~Arc(); NBD=0; TEMPLATE_FUNC=
+<l>23
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::~Arc(); PARAMNO=0; DEF=true; DIT=false; START_LINE=23; END_LINE=25; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>23
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>g:\ap\Arc.h
+<c>INTERNAL-METRICS-TYPES
+<b>CLASS=Arc; NAMESPACE=; TEMPLATE_TYPE=; TAG=class
+<l>7
+<k>7
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>g:\ap\Arc.h
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::Arc(); PARAMNO=0; DEF=false; DIT=true; START_LINE=10; END_LINE=10; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>10
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::~Arc(); NBD=0; TEMPLATE_FUNC=
+<l>23
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>g:\ap\Arc.h
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::~Arc(); PARAMNO=0; DEF=false; DIT=true; START_LINE=11; END_LINE=11; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>11
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::Arc(int, int, std::string&); NBD=0; TEMPLATE_FUNC=
+<l>5
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>g:\ap\Arc.h
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::Arc(int, int, std::string&); PARAMNO=3; DEF=false; DIT=true; START_LINE=13; END_LINE=13; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>13
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::g_placeA() const; NBD=0; TEMPLATE_FUNC=
+<l>9
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>g:\ap\Arc.h
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::g_placeA() const; PARAMNO=0; DEF=false; DIT=true; START_LINE=15; END_LINE=15; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>15
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::g_placeB() const; NBD=0; TEMPLATE_FUNC=
+<l>14
+<k>10
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>g:\ap\Arc.h
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::g_placeB() const; PARAMNO=0; DEF=false; DIT=true; START_LINE=16; END_LINE=16; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>16
+<k>6
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-NBD
+<b>FUNC=Arc::g_transportType() const; NBD=0; TEMPLATE_FUNC=
+<l>18
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>g:\ap\Arc.h
+<c>INTERNAL-METRICS-METHODS2
+<b>CLASS=Arc; SIGNATURE=Arc::g_transportType() const; PARAMNO=0; DEF=false; DIT=true; START_LINE=17; END_LINE=17; TEMPLATE_CLASS=; TEMPLATE_FUNC=
+<l>17
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>G:\AP\Arc.cpp
+<c>INTERNAL-METRICS-LINES_TYPES
+<b>DATA=SBSBSSSBSSSSBSSSSSSSSBSSSB
+<l>1
+<k>-1
+<s>false
+<N>
+<f>
+<L>0

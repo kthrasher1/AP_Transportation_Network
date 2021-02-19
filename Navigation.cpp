@@ -117,13 +117,13 @@ bool Navigation::ProcessCommand(const string& commandString)
 		string placeA;
 		string placeB;
 
-
+		int counter = 0;
 		for (Node* const node : nodeVector)
 		{
 
 			for (Node* const nodes : nodeVector)
 			{
-
+				counter++;
 
 				double c;
 
@@ -142,10 +142,12 @@ bool Navigation::ProcessCommand(const string& commandString)
 					placeB = nodes->g_placeName();
 
 				}
+
 			}
 
 		}
-		_outFile << "MaxDist" << "\n" << placeA << "," << placeB << "," << maxDist << "\n" << endl;
+		cout << counter << endl;
+		_outFile << "MaxDist" << "\n" << placeA << "," << placeB << "," << fixed << setprecision(3) << maxDist << "\n" << endl;
 
 		return true;
 	}
@@ -155,18 +157,16 @@ bool Navigation::ProcessCommand(const string& commandString)
 		int placeA;
 		int placeB;
 
+		int counter = 0;
 
-
-		for (Node* const nodes : nodeVector)
+		for (Arc* const arc : arcVector)
 		{
-			for (Arc* const arc : arcVector)
+			for (Node* const nodes : nodeVector)
 			{
-
+				counter++;
 				if (arc->g_placeA() == nodes->g_ref())
 				{
 					for (Node* const node : nodeVector) {
-
-
 
 						if (arc->g_placeB() == node->g_ref())
 						{
@@ -189,6 +189,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 								placeB = arc->g_placeB();
 
 							}
+					
 
 						}
 					}
@@ -196,9 +197,9 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 			}
 		}
+		cout << counter << endl;
 
-
-		_outFile << "Max Link" << "\n" << placeA << "," << placeB << "," << maxLink << "\n" << endl;
+		_outFile << "Max Link" << "\n" << placeA << "," << placeB << "," << fixed << setprecision(3) << maxLink << "\n" << endl;
 
 		return true;
 
@@ -213,34 +214,45 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 		_outFile << "FindDist " << readInRefA << " " << readInRefB << endl;
 
-
-		for (Node* const node : nodeVector)
-		{
+		int counter = 0;
+		double x, y, x1, y1;
+		string placeA, placeB;
 
 			for (Node* const nodes : nodeVector)
 			{
+				double c;
 
-				if (node->g_ref() == readInRefA && nodes->g_ref() == readInRefB)
+				if (nodes->g_ref() == readInRefA)
 				{
 
-					double c;
+					x = nodes->g_northings();
+					y = nodes->g_eastings();
+					placeA = nodes->g_placeName();
+					counter += 1;
+					
+				}
+				else if (nodes->g_ref() == readInRefB) 
+				{
 
-					const double x = node->g_northings();
-					const double y = node->g_eastings();
+					x1 = nodes->g_northings();
+					y1 = nodes->g_eastings();
+					placeB = nodes->g_placeName();
 
-					const double x1 = nodes->g_northings();
-					const double y1 = nodes->g_eastings();
+					counter += 1;
+				}
+
+				if (counter == 2) 
+				{ 
+					
 
 					Math(x, y, x1, y1, c);
 
-					_outFile << node->g_placeName() << "," << nodes->g_placeName() << "," << fixed << setprecision(3) << c << "\n" << endl;
+					_outFile << placeA << "," << placeB << "," << fixed << setprecision(3) << c << "\n" << endl;
 
-					break;
+					return true;
 				}
 			}
-		}
-
-
+	
 		return true;
 
 	}
@@ -248,8 +260,6 @@ bool Navigation::ProcessCommand(const string& commandString)
 	{
 		int readInRef;
 		inString >> readInRef;
-
-
 
 		_outFile << "FindNeighbour " << readInRef << endl;
 		for (Node* const node : nodeVector) {
@@ -265,7 +275,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 			}
 		}
-
+		_outFile << endl;
 		return true;
 	}
 	else if (command == "Check")
@@ -347,7 +357,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 		_outFile << "FindRoute " << transportMode << " " << RefA << " " << RefB << endl;
 
 		FindRoute(RefA, RefB, transportMode);
-
+		
 
 		return true;
 	}
@@ -365,6 +375,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 		_outFile << "FindShortestRoute " << transportMode << " " << RefA << " " << RefB << endl;
 
 		FindRoute(RefA, RefB, transportMode);
+	
 
 		return true;
 	}
@@ -519,18 +530,22 @@ bool Navigation::FindRoute(const int &RefA, const int &RefB, const string &trans
 
 		}
 	}
-	vector<int> CloneRefs = CurrentRefs;
 
-	vector<int>visitedNodes;
+	vector<int> copyRefs = CurrentRefs;
+	vector<int> visitedNodes;
 	vector<int> PastRefs;
+
 	for (int i = 0; i < CurrentRefs.size(); i++)
 	{
 		for (int j = 0; j < nodeVector.size(); j++)
 		{
-			if (nodeVector[j]->g_ref() == CurrentRefs[i])
+			if (CurrentRefs.size() != 0 && nodeVector[j]->g_ref() == CurrentRefs[i])
 			{
-
-				visitedNodes.push_back(CurrentRefs[i]);
+				if (!count(visitedNodes.begin(), visitedNodes.end(), CurrentRefs[i])) //Looks to see if current refs exists.
+				{
+					visitedNodes.push_back(CurrentRefs[i]);
+				}
+				
 				vector<Arc*> TempArcs = nodeVector[j]->g_NodeArc();
 
 				for (int k = 0; k < TempArcs.size(); k++)
@@ -551,7 +566,7 @@ bool Navigation::FindRoute(const int &RefA, const int &RefB, const string &trans
 							{
 								for (int y = 0; y < arcVector.size(); y++)
 								{
-									for (const int c : CloneRefs)
+									for (const int c : copyRefs)
 									{
 										if (c == arcVector[y]->g_placeA() && finalArc.back() == arcVector[y]->g_placeB())
 										{
@@ -569,7 +584,7 @@ bool Navigation::FindRoute(const int &RefA, const int &RefB, const string &trans
 										{
 											finalArc.push_back(c);
 											finalArc.push_back(RefA);
-											reverse(finalArc.begin(), finalArc.end());
+										    reverse(finalArc.begin(), finalArc.end());
 											for (int a = 0; a < finalArc.size(); a++)
 											{
 												_outFile << finalArc.at(a) << "\n";
